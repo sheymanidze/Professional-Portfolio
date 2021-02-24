@@ -1,6 +1,7 @@
 * {
   margin:0;
   padding:0; 
+  box-sizing: border-box;
 }
 
 body {
@@ -66,15 +67,17 @@ h2 {
   text-align:right;
   
 }
+/*h2 and p together*/
 .row {
   display: flex;
   flex-direction: row;
   margin-left: 50px;
 
 }
+/*About Me section on the side*/
 .sides {
   width: 300px;
-  height: 80px;
+  height: 300px;
   padding: 50px;
   border-right:5px solid #fdd51b;
 }
@@ -83,15 +86,60 @@ h2 {
   bottom: 55px;
   left: 30px;
 }
+/*About Me section p*/
 .middle {
   font-size: 20px;
   color: black;
   display: inline;
-  padding-left: 20px;
-  margin-right: 20px;
+  padding-left: 33px;
+  margin-right: 150px;
+  margin-bottom: 10px;
 }
 span {
   font-weight: 900;
   font-size: 23px; 
 }
 
+/*Work section on the side*/
+.experience {
+  width: 300px;
+  height: 1000px;
+  padding: 50px;
+  border-right:5px solid #fdd51b;
+
+}
+ .experience h2 {
+  position: relative;
+  bottom: 50px;
+  left: 30px;
+ }
+/*About Me section actual work experience*/
+.accessibility-website {
+  display: inline;
+  padding-left: 20px;
+  margin-right: 150px;
+  margin-top: 10px;
+}
+ .accessibility-website img {
+  border: 6px solid #fdd51b;
+  border-radius: 6px;
+  padding: 8px;
+  width: 800px;
+  display: block;
+  margin-left: 10px;
+  margin-right: 20px;
+ }
+ 
+ .smaller-box {
+  display: block;
+  padding-left: 20px;
+  margin-right: 150px;
+  margin-top: 10px;
+ }
+ .smaller-box img {
+  border: 6px solid #fdd51b;
+  border-radius: 6px;
+  padding: 8px;
+  width: 400px;
+  display: inline-block;
+ }
