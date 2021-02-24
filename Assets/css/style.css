@@ -68,7 +68,7 @@ h2 {
   
 }
 /*h2 and p together*/
-.row {
+.all {
   display: flex;
   flex-direction: row;
   margin-left: 50px;
@@ -103,9 +103,10 @@ span {
 /*Work section on the side*/
 .experience {
   width: 300px;
-  height: 1000px;
-  padding: 50px;
+  height: 1250px;
+  padding: 56px;
   border-right:5px solid #fdd51b;
+  margin-top: 20px;
 
 }
  .experience h2 {
@@ -113,33 +114,50 @@ span {
   bottom: 50px;
   left: 30px;
  }
-/*About Me section actual work experience*/
-.accessibility-website {
-  display: inline;
-  padding-left: 20px;
-  margin-right: 150px;
-  margin-top: 10px;
-}
- .accessibility-website img {
-  border: 6px solid #fdd51b;
-  border-radius: 6px;
-  padding: 8px;
-  width: 800px;
-  display: block;
-  margin-left: 10px;
-  margin-right: 20px;
+
+ img {
+  border: 3px solid #fdd51b;
+
  }
+ .row {
+  display: -ms-flexbox; 
+  display: flex;
+  flex-wrap: wrap;
+   padding: 0 4px;
+ }
+
+ .row img {
+ width:810px;
+ height:600px;
+ margin-left: 30px;
+ margin-top: 20px;
  
- .smaller-box {
-  display: block;
-  padding-left: 20px;
-  margin-right: 150px;
-  margin-top: 10px;
  }
- .smaller-box img {
-  border: 6px solid #fdd51b;
-  border-radius: 6px;
-  padding: 8px;
+
+.column {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 33px;
+}
+
+.column img {
+  margin-top: 20px;
+  vertical-align: middle;
   width: 400px;
-  display: inline-block;
- }
+  height: 300px;
+  margin-left: 8px;
+}  
+
+@media screen and (max-width: 768px) {
+  body,
+  .column {
+     flex-direction: column;
+  }
+ 
+ footer {
+   background: grey;
+  justify-content: center;
+  font-size: 15px;
+  color: #fdd51b
+}
+
