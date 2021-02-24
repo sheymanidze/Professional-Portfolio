@@ -1,6 +1,6 @@
 * {
   margin:0;
-  padding:0;  
+  padding:0; 
 }
 
 body {
@@ -11,7 +11,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1%;
+  padding: 1% 1% 1% 0;
   background-color: grey;
   color: black;
   
@@ -23,6 +23,8 @@ header {
    padding-right: 1%;
 
  }
+
+ 
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -43,6 +45,10 @@ nav a:hover {
   color:ivory;
 }
 
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
 .underheader {
   height: 150px;
     width: 100%;
@@ -52,28 +58,40 @@ nav a:hover {
     background-position: center;
 }
 
-.vl {
-    border-left: 6px solid #fdd51b;
-    height: 200px;
-    position:absolute;
-    left: 20%;
-}
-
 h2 {
   font-size: 40px;
   color: grey;
-  margin-right: 20px;
-  padding: 10px;
-  clear: both;
-  float: left;
-  width: 20%;
+  margin: 0 5% 1% 5%;
+  display: inline;
+  text-align:right;
+  
 }
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
 
-p {
+}
+.sides {
+  width: 300px;
+  height: 80px;
+  padding: 50px;
+  border-right:5px solid #fdd51b;
+}
+.sides h2 {
+  position: relative;
+  bottom: 55px;
+  left: 30px;
+}
+.middle {
   font-size: 20px;
   color: black;
+  display: inline;
+  padding-left: 20px;
+  margin-right: 20px;
 }
 span {
   font-weight: 900;
   font-size: 23px; 
 }
+
