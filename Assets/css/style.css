@@ -16,27 +16,25 @@ header {
   color: black;
   
 }
- h1 {
+h1 {
    font-size: 200%;
    background-color:#fdcb13;
    padding-left:5%;
    padding-right: 1%;
 
  }
-
  
 nav ul {
   display: flex;
   justify-content: space-between;
-  min-width: 300px;
-  
+  min-width: 300px; 
 }
 
 nav a {
-  color: #fdd51b;
-  font-weight: bold;
-  text-decoration: underline;
-  text-underline-position: under;
+ color: #fdd51b;
+ font-weight: bold;
+ text-decoration: underline;
+ text-underline-position: under;
  text-decoration-color: ivory;
  text-decoration-thickness: 3px;
 }
@@ -51,27 +49,24 @@ section {
 }
 .hero {
   height: 150px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../Images/background.jpg");
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../Images/background.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .helper {
-max-width: 20%; 
-height: auto;
-position: absolute;
-top: 36px;
-
-
+ max-width: 250px; 
+ height: auto;
+ position: absolute;
+ top: 36px;
 }
+
 h2 {
   font-size: 40px;
   color: grey;
-  margin: 0 5% 1% 5%;
   display: inline;
-  text-align:right;
-  
+  text-align:right; 
 }
 /*h2 and p together*/
 .all {
@@ -85,15 +80,14 @@ h2 {
 .sides {
   width: 300px;
   height: 100px;
-  padding: 50px;
   margin-top: 20px;
   }
   
 
 .sides h2 {
   position: relative;
-  top: 20px;
-  left: 110px;
+  top: 62px;
+  left: 120px;
 }
 /*About Me section p*/
 .middle {
@@ -101,45 +95,50 @@ h2 {
   color: black;
   display: inline;
   padding-left: 30px;
-  margin-top: 50px;
+  margin-top: 90px;
   margin-right: 150px;
   margin-left: 150px;
   margin-bottom: 10px;
   border-left:5px solid #fdd51b;
+}
+
+.mid3 {
+  border-left:5px solid #fdd51b;
+  display: inline;
 }
 span {
   font-weight: 900;
   font-size: 23px; 
 }
 
-
  /*Work section main*/
-
 .accessibility-website {
   opacity: 30%;
+  stroke-opacity: 100%;
  }
 
- .accessibility-website:hover {
+.accessibility-website:hover {
    opacity: 100%;
  }
- .container {
+
+.container {
    position: relative;
  }
 
- .text-block {
-   position: absolute;
-   bottom: 20px;
-   left:20px;
-  font-size: 10px;
-  color: black;
-  background-color: #fdd51b;
-  background-size: cover;
-  padding: 0.5%;
+.text-block {
   position: absolute;
-  border: 2px solid grey;
+  bottom: 100px;
+  left:13px;
+  font-size: 15px;
+  color: #fdd51b;
+  background-color: grey;
+  background-size: cover;
+  padding: 1%;
+  position: absolute;
+  border: 2px solid black;
  }
 
- .accessibility-website {
+.accessibility-website {
    width:100%;
    height:600px;
    margin-left: 30px;
@@ -147,7 +146,7 @@ span {
    border: 3px solid #fdd51b;
  }
 
- .row {
+.row {
   display: flex;
   flex-wrap: wrap;
   display: inline;
@@ -156,9 +155,7 @@ span {
   margin-right: 150px;
   margin-left: 150px;
   margin-bottom: 10px;
-  border-left: 5px solid #fdd51b;
  }
-
 
 .column {
   display: flex;
@@ -178,15 +175,25 @@ span {
 .column img:hover {
   opacity: 100%;
 }
+
 .contacts {
-  position:relative;
-  display: flex;
-  justify-content: space-between;
-  border-left: 5px solid #fdd51b;
+  position: relative;
+  margin-left: 50px;
+}
+
+
+
+
+.contacts nav{
+  font-size: 38px;
+  padding-left: 30px;
+  margin-top: 90px;
+  margin-bottom: 50px;
+  border-left:5px solid #fdd51b;
 }
 
 footer {
-  background: grey;
+ background: grey;
  text-align: center;
  font-size: 15px;
  color: #fdd51b
@@ -196,26 +203,55 @@ footer {
   .column {
      flex-direction: column;
   }
+
     .accessibility-website {
     width: 300px;
     height: 150px;
   }
+
   .middle {
-      border-left:hidden;
-      margin-top:85px;
+    border-left:hidden;
+    margin-top:85px;
     }
+
   .mid1 {
       border-top: 5px solid #fdd51b;
       align-items: center;
+      padding-top: 30px;
     }
-   .sides h2 {
-     display: inline-block;
-     align-items: center;
-     white-space: nowrap;  
-   }
-  .helper {
-    top: 70px;
+
+  .mid2 {
+      margin-bottom: 85px;
+    }
+
+  .mid3 {
+    border-left: hidden;
+    border-top: 5px solid #fdd51b;
   }
+
+  .sides h2 {
+     display: inline-block;
+     white-space: nowrap;  
+     top:15px;
+   }
+
+  .helper {
+    top: 40px;
+    max-width: 200px;
+    height: auto;
+  }
+
+  .contacts nav {
+    border-left: hidden;
+    border-top: 5px solid #fdd51b;
+    padding-top: 30px;
+  }
+  }
+
+  @media screen and (max-width: 580px) {  
+   .helper {
+     top:60px;
+   } 
   }
       
 
