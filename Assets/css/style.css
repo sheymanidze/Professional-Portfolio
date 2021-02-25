@@ -183,6 +183,12 @@ span {
 .column img:hover {
   opacity: 100%;
 }
+.contacts {
+  position:relative;
+  display: flex;
+  justify-content: space-between;
+  border-left: 5px solid #fdd51b;
+}
 
 footer {
   background: grey;
@@ -204,21 +210,24 @@ footer {
   @media screen and (max-width: 930px) {
     .middle {
       border-left:hidden;
+      margin-top:85px;
     }
   }
 
   @media screen and (max-width: 930px) {
     .mid1 {
       border-top: 5px solid #fdd51b;;
-
     }
-.contacts {
-  position:relative;
-  display: flex;
-  justify-content: space-between;
-  border-left: 5px solid #fdd51b;
- 
-}
+
+ @media screen and (max-width: 930px) {
+   .sides h2 {
+     display: inline-block;
+     left: 400px;
+     white-space: nowrap;
+     
+     
+      }
+
       
 
 
