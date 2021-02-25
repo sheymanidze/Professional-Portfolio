@@ -1,7 +1,6 @@
 * {
   margin:0;
   padding:0; 
-  box-sizing: border-box;
 }
 
 body {
@@ -75,49 +74,40 @@ h2 {
 
 }
 /*About Me section on the side*/
+/*
 .sides {
   width: 300px;
-  height: 300px;
+  height: 100px;
   padding: 50px;
-  border-right:5px solid #fdd51b;
-}
+  margin-top: 20px;
+  }
+  */
+
 .sides h2 {
   position: relative;
-  bottom: 55px;
-  left: 30px;
+  top: 20px;
+  left: 110px;
 }
 /*About Me section p*/
 .middle {
   font-size: 20px;
   color: black;
   display: inline;
-  padding-left: 33px;
+  padding-left: 30px;
+  margin-top: 20px;
   margin-right: 150px;
+  margin-left: 150px;
   margin-bottom: 10px;
+  border-left:5px solid #fdd51b;
 }
 span {
   font-weight: 900;
   font-size: 23px; 
 }
 
-/*Work section on the side*/
-.experience {
-  width: 300px;
-  height: 1250px;
-  padding: 56px;
-  border-right:5px solid #fdd51b;
-  margin-top: 20px;
 
-}
- .experience h2 {
-  position: relative;
-  bottom: 50px;
-  left: 30px;
- }
+ /*Work section main*/
 
- img {
-  border: 3px solid #fdd51b;
- }
 .accessibility-website {
   opacity: 30%;
  }
@@ -156,8 +146,18 @@ span {
  .row {
   display: flex;
   flex-wrap: wrap;
+  display: inline;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-bottom: 10px;
+  border-left: 5px solid #fdd51b;
  }
 
+ img {
+  border: 3px solid #fdd51b;
+ }
  .row img {
  width:810px;
  height:600px;
@@ -183,19 +183,42 @@ span {
 .column img:hover {
   opacity: 100%;
 }
+
+footer {
+  background: grey;
+ text-align: center;
+ font-size: 15px;
+ color: #fdd51b
+}
+
 @media screen and (max-width: 930px) {
   .column {
      flex-direction: column;
   }
   @media screen and (max-width: 930px) {
-    .row {
-       width:100px;
+    .accessibility-website {
+    width: 300px;
+    height: 150px;
+  }
+
+  @media screen and (max-width: 930px) {
+    .middle {
+      border-left:hidden;
+    }
+  }
+
+  @media screen and (max-width: 930px) {
+    .mid1 {
+      border-top: 5px solid #fdd51b;;
+
+    }
+.contacts {
+  position:relative;
+  display: flex;
+  justify-content: space-between;
+  border-left: 5px solid #fdd51b;
+ 
+}
       
-}
- footer {
-   background: grey;
-  text-align: center;
-  font-size: 15px;
-  color: #fdd51b
-}
+
 
