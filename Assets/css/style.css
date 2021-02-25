@@ -16,6 +16,7 @@ header {
   color: black;
   
 }
+
 h1 {
    font-size: 200%;
    background-color:#fdcb13;
@@ -72,22 +73,24 @@ h2 {
 .all {
   display: flex;
   flex-direction: row;
-  margin-left: 50px;
-
 }
 /*About Me section on the side*/
 
 .sides {
-  width: 300px;
+  width: 30vw;
   height: 100px;
   margin-top: 20px;
-  }
-  
+  display: flex;
+  justify-content: flex-end;
+}
+
 
 .sides h2 {
-  position: relative;
-  top: 62px;
-  left: 120px;
+  margin-right: 10px;
+}
+
+.main {
+  width: 70vw;
 }
 /*About Me section p*/
 .middle {
@@ -95,10 +98,8 @@ h2 {
   color: black;
   display: inline;
   padding-left: 30px;
-  margin-top: 90px;
-  margin-right: 150px;
-  margin-left: 150px;
   margin-bottom: 10px;
+  margin-top: 50px;
   border-left:5px solid #fdd51b;
 }
 
@@ -175,14 +176,6 @@ span {
 .column img:hover {
   opacity: 100%;
 }
-
-.contacts {
-  position: relative;
-  margin-left: 50px;
-}
-
-
-
 
 .contacts nav{
   font-size: 38px;
