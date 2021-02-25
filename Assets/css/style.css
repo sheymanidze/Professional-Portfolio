@@ -49,7 +49,7 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
-.underheader {
+.hero {
   height: 150px;
     width: 100%;
     margin-bottom: 25px;
@@ -74,14 +74,14 @@ h2 {
 
 }
 /*About Me section on the side*/
-/*
+
 .sides {
   width: 300px;
   height: 100px;
   padding: 50px;
   margin-top: 20px;
   }
-  */
+  
 
 .sides h2 {
   position: relative;
@@ -115,19 +115,14 @@ span {
  .accessibility-website:hover {
    opacity: 100%;
  }
- .details {
-   font-size: 20px;
-   color: #fdd51b;
-   background-color: grey;
-   background-size: cover;
-   padding: 1% 0.5% 1% 0.5%;
-   position:absolute;
-   top: 1000px;
-   left: 296px;
-   border: 2px solid black;
+ .container {
+   position: relative;
  }
 
- .details-all {
+ .text-block {
+   position: absolute;
+   bottom: 20px;
+   left:20px;
   font-size: 10px;
   color: black;
   background-color: #fdd51b;
@@ -142,6 +137,12 @@ span {
   left: 296px;
  }
 
+ .accessibility-website {
+   width:100%;
+   height:600px;
+   margin-left: 30px;
+   margin-top: 20px;
+ }
 
  .row {
   display: flex;
@@ -158,13 +159,7 @@ span {
  img {
   border: 3px solid #fdd51b;
  }
- .row img {
- width:810px;
- height:600px;
- margin-left: 30px;
- margin-top: 20px;
  
- }
 
 .column {
   display: flex;
@@ -201,33 +196,24 @@ footer {
   .column {
      flex-direction: column;
   }
-  @media screen and (max-width: 930px) {
     .accessibility-website {
     width: 300px;
     height: 150px;
   }
-
-  @media screen and (max-width: 930px) {
     .middle {
       border-left:hidden;
       margin-top:85px;
     }
-  }
-
-  @media screen and (max-width: 930px) {
     .mid1 {
-      border-top: 5px solid #fdd51b;;
+      border-top: 5px solid #fdd51b;
+      align-items: center;
     }
-
- @media screen and (max-width: 930px) {
    .sides h2 {
      display: inline-block;
-     left: 400px;
-     white-space: nowrap;
-     
-     
-      }
-
+     align-items: center;
+     white-space: nowrap;  
+   }
+  }
       
 
 
