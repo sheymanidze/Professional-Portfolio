@@ -82,7 +82,6 @@ h2 {
 /*About Me section on the side*/
 .sides {
   width: 30vw;
-  height: 100px;
   margin-top: 20px;
   display: flex;
   justify-content: flex-end;
@@ -166,13 +165,11 @@ span {
 }
 
 .column img {
-  margin-top: 20px;
-  vertical-align: middle;
   width: 400px;
   height: 300px;
   margin-left: 10px;
   opacity: 30%;
-  border: 3px solid #fdd51b;
+  border: 5px solid #fdd51b;
 } 
 
 .column .first-project img {
@@ -186,7 +183,7 @@ span {
 }
 
 .contacts {
-  margin-top: 90px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 
@@ -206,7 +203,7 @@ span {
 footer {
  background: grey;
  text-align: center;
- font-size: 15px;
+ font-size: 20px;
  color: #fdd51b
 }
 
