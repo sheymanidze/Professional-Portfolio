@@ -56,6 +56,7 @@ section {
   background-size: cover;
   background-position: center;
 }
+/*illustration of me*/
 .helper {
  max-width: 250px; 
  height: auto;
@@ -74,8 +75,9 @@ h2 {
   display: flex;
   flex-direction: row;
 }
-/*About Me section on the side*/
 
+
+/*About Me section on the side*/
 .sides {
   width: 30vw;
   height: 100px;
@@ -177,11 +179,15 @@ span {
   opacity: 100%;
 }
 
+.contacts {
+
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
 .contacts nav{
   font-size: 38px;
   padding-left: 30px;
-  margin-top: 90px;
-  margin-bottom: 50px;
   border-left:5px solid #fdd51b;
 }
 
@@ -192,7 +198,14 @@ footer {
  color: #fdd51b
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1115px) {
+.helper {
+  top: 40px;
+  max-width: 200px;
+  height: auto;
+}
+}
+@media screen and (max-width: 958px) {
   .column {
      flex-direction: column;
   }
