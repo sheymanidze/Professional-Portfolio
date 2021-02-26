@@ -9,6 +9,7 @@ body {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 1% 1% 1% 0;
@@ -69,6 +70,7 @@ h2 {
   color: grey;
   display: inline;
   text-align:right; 
+  margin-top: 30px;
 }
 /*h2 and p together*/
 .all {
@@ -86,11 +88,13 @@ h2 {
   justify-content: flex-end;
 }
 
-
 .sides h2 {
   margin-right: 10px;
 }
 
+#about-me {
+  margin-left: 12px;
+}
 .main {
   width: 70vw;
 }
@@ -108,6 +112,7 @@ h2 {
 .mid3 {
   border-left:5px solid #fdd51b;
   display: inline;
+
 }
 span {
   font-weight: 900;
@@ -141,23 +146,17 @@ span {
   border: 2px solid black;
  }
 
-.accessibility-website {
-   width:100%;
-   height:600px;
-   margin-left: 30px;
-   margin-top: 20px;
-   border: 3px solid #fdd51b;
- }
-
-.row {
+ .mid3 {
   display: flex;
   flex-wrap: wrap;
-  display: inline;
-  padding-left: 20px;
-  margin-top: 20px;
-  margin-right: 150px;
-  margin-left: 150px;
-  margin-bottom: 10px;
+  margin-top: 60px;
+ }
+
+ .row img {
+  max-width: 100%; 
+  margin-left: 30px;
+  opacity: 30%;
+  border: 3px solid #fdd51b;
  }
 
 .column {
@@ -174,13 +173,19 @@ span {
   margin-left: 10px;
   opacity: 30%;
   border: 3px solid #fdd51b;
-}  
+} 
+
+.column .first-project img {
+ width: 820px;
+ height: 600px;
+
+}
+
 .column img:hover {
   opacity: 100%;
 }
 
 .contacts {
-
   margin-top: 90px;
   margin-bottom: 50px;
 }
@@ -189,6 +194,13 @@ span {
   font-size: 38px;
   padding-left: 30px;
   border-left:5px solid #fdd51b;
+  margin-top: 50px;
+}
+
+.main nav a {
+  justify-content: space-between;
+  margin-left: 85px;
+
 }
 
 footer {
@@ -198,17 +210,23 @@ footer {
  color: #fdd51b
 }
 
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1341px) {
+
 .helper {
   top: 40px;
   max-width: 200px;
   height: auto;
 }
+
 }
 @media screen and (max-width: 958px) {
-  .column {
+ 
+
+  .column , .all{
      flex-direction: column;
+     justify-content: center;
   }
+
 
     .accessibility-website {
     width: 300px;
@@ -233,32 +251,82 @@ footer {
   .mid3 {
     border-left: hidden;
     border-top: 5px solid #fdd51b;
+    margin-left: 40px;
+    margin-top: 100px;
   }
 
-  .sides h2 {
-     display: inline-block;
-     white-space: nowrap;  
-     top:15px;
-   }
-
-  .helper {
-    top: 40px;
-    max-width: 200px;
-    height: auto;
+  h2 {
+    justify-content:left;
+    margin-top: 100px;
   }
 
   .contacts nav {
     border-left: hidden;
     border-top: 5px solid #fdd51b;
-    padding-top: 30px;
+    padding-top: 40px;
+    margin-left: 40px;
+    margin-top: 100px;
+  }
+
+  .main nav a {
+    margin-left: 40px;
   }
   }
 
-  @media screen and (max-width: 580px) {  
-   .helper {
-     top:60px;
-   } 
+  @media screen and (max-width: 768px) {  
+    .main nav {
+      font-size: 20px;
+    }
   }
+
+  @media screen and (max-width: 720px) {  
+
+    nav ul {
+      display: block;
+    }
+
+    nav a {
+      text-decoration-thickness: 1px;
+      font-weight: lighter;
+    }
+     #contact-me h2 {
+      font-size: 20px;
+       
+    }
+
+    .main nav {
+      font-size: 15px;
+  
+    }
+   } 
+   @media screen and (max-width: 375px) { 
+     
+    .sides h2 {
+      font-size: 20px;
+    }
+    #contact-me h2 {
+      font-size: 15px;
+      margin-left: 50px;
+    }
+    .main nav a {
+      margin-left: 0;
+    }
+    .middle, .mid3 {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    .mid2 {
+      margin-bottom: 20px;
+    }
+
+    .main nav {
+      margin-top: 0;
+    }
+   }
       
 
 
