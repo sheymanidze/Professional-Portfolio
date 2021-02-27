@@ -288,7 +288,6 @@ footer {
       font-size: 20px;
     }
        
-    }
   }
   @media screen and (max-width: 768px) {  
     .main nav {
@@ -379,7 +378,7 @@ footer {
 
     main {
       margin-top: -30px;
-      margin left: 2px;
+      margin-left: 2px;
     }
 
     .main nav {
@@ -389,7 +388,7 @@ footer {
     footer {
       font-size: 15px;
     }
-   }
+  }
 
   
     
