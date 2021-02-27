@@ -250,7 +250,7 @@ footer {
   main {
     border-left: hidden;
     border-top: 5px solid #fdd51b;
-    margin-left: 27px;
+    
     
   }
 
@@ -347,7 +347,6 @@ footer {
     
    }
 
-
    @media screen and (max-width: 375px) { 
      
     .sides h2 {
@@ -379,10 +378,6 @@ footer {
       margin-top: 15px;
     }
 
-    main {
-      margin-top: -30px;
-      margin-left: 2px;
-    }
 
     .main nav {
       margin-top: 0;
@@ -393,6 +388,28 @@ footer {
     }
   }
     
+  @media screen and (max-width: 282px) { 
+    .middle {
+     margin-top: 18px;
+     font-size: 15px;
+    }
+
+    .mid1 {
+      padding-top: 5px;
+    }
+
+    #work {
+      margin-left: 5px;
+    }
+    main {
+      margin-top: -15px;
+    
+    }
+
+    .column {
+      padding-top: 1rem;
+    }
+  }
   @media screen and (min-width: 968px) {
     
     .column {
