@@ -79,7 +79,6 @@ h2 {
   flex-direction: row;
 }
 
-
 /*About Me section on the side*/
 .sides {
   width: 30vw;
@@ -108,11 +107,6 @@ h2 {
   margin-top: 50px;
   border-left:5px solid #fdd51b;
 }
-/*
-.mid3 {
-  border-left:5px solid #fdd51b;
-  display: inline;
-*/
 
 span {
   font-weight: 900;
@@ -120,7 +114,8 @@ span {
 }
 
 #work {
-  margin-left: 132px;
+  display: flex;
+  margin-left: 8vw;
 }
 main {
   width: 96%;
@@ -193,71 +188,6 @@ img:hover {
   flex-grow: 1;
 }
 
- /*Work section main
-.accessibility-website {
-  opacity: 30%;
-  stroke-opacity: 100%;
- }
-
-.accessibility-website:hover {
-   opacity: 100%;
- }
-
-.container {
-   position: relative;
- }
-/*
- /*
-.text-block {
-  position: absolute;
-  bottom: 100px;
-  left:13px;
-  font-size: 15px;
-  color: #fdd51b;
-  background-color: grey;
-  background-size: cover;
-  padding: 1%;
-  position: absolute;
-  border: 2px solid black;
- }
-
- .mid3 {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 60px;
- }
-
- .row img {
-  max-width: 100%; 
-  margin-left: 30px;
-  opacity: 30%;
-  border: 3px solid #fdd51b;
- }
-
-.column {
-  display: flex;
-  align-items: flex-start;
-  padding-left: 21px;
-}
-
-.column img {
-  width: 400px;
-  height: 300px;
-  margin-left: 10px;
-  opacity: 30%;
-  border: 5px solid #fdd51b;
-} 
-
-.column .first-project img {
- width: 820px;
- height: 600px;
-
-}
-
-.column img:hover {
-  opacity: 100%;
-}
-*/
 .contacts {
   margin-top: 20px;
   margin-bottom: 50px;
@@ -295,18 +225,6 @@ footer {
 
 @media screen and (max-width: 968px) {
  
-/*
-  .column , .all{
-     flex-direction: column;
-     justify-content: center;
-  }
-
-
-    .accessibility-website {
-    width: 300px;
-    height: 150px;
-  }
-*/
 .all{
   flex-direction: column;
   justify-content: center;
@@ -325,17 +243,27 @@ footer {
   .mid2 {
       margin-bottom: 85px;
     }
-/*
-  .mid3 {
-    border-left: hidden;
-    border-top: 5px solid #fdd51b;
-    margin-left: 40px;
-    margin-top: 100px;
-  }
-*/
+
   h2 {
     justify-content:left;
-    margin-top: 100px;
+    margin-top: 60px;
+  }
+  main {
+    border-left: hidden;
+    border-top: 5px solid #fdd51b;
+    margin-left: 100px;
+    
+  }
+
+  #work {
+    margin-left: -67px;
+    margin-bottom: 40px;
+    margin-top: -44px;
+  }
+
+  .column {
+    padding-top: 4rem;
+    margin-bottom: -3.5rem;
   }
 
   .contacts nav {
@@ -346,14 +274,26 @@ footer {
     margin-top: 100px;
   }
 
+  .code-card {
+    outline: 3px dashed #fdd51b;
+  }
+
   .main nav a {
     margin-left: 40px;
   }
   }
 
-  @media screen and (max-width: 768px) {  
+  @media screen and (max-width: 850px) {  
     .main nav {
       font-size: 20px;
+    }
+       
+    }
+  }
+  @media screen and (max-width: 768px) {  
+    .main nav {
+      font-size: 15px;
+      display: inline;
     }
   }
 
@@ -367,16 +307,45 @@ footer {
       text-decoration-thickness: 1px;
       font-weight: lighter;
     }
-     #contact-me h2 {
-      font-size: 20px;
-       
-    }
+     
 
-    .main nav {
+    .main nav a{
       font-size: 15px;
+      margin-left: 0;
   
     }
    } 
+
+   @media screen and (max-width: 545px) { 
+     
+    .sides h2{
+      margin-right: 36;
+    }
+    #work {
+       margin-left: 8px;
+     }
+     #contact-me {
+       margin-left: 18px;
+     }
+
+     
+   }
+   @media screen and (max-width: 420px) { 
+     h2 {
+       margin-top: -22px;
+       margin-bottom: -52px;
+     }
+     #work  {
+       margin-left: 15px;
+     }
+     #contact-me {
+      margin-left: 52px;
+    }
+
+    
+   }
+
+
    @media screen and (max-width: 375px) { 
      
     .sides h2 {
@@ -384,7 +353,7 @@ footer {
     }
     #contact-me h2 {
       font-size: 15px;
-      margin-left: 50px;
+      margin-left: -10px;
     }
     .main nav a {
       margin-left: 0;
@@ -393,42 +362,48 @@ footer {
     .middle {
       margin-top: 0;
     }
-    /*
-    .middle, .mid3 {
-      margin-top: 0;
-    }
-    */
 
     h2 {
-      margin-top: 20px;
+      margin-top: -31px;
+      
     }
 
     .mid2 {
       margin-bottom: 20px;
     }
 
+    #work {
+      margin-left: -19px;
+      margin-top: 15px;
+    }
+
+    main {
+      margin-top: -30px;
+      margin left: 2px;
+    }
+
     .main nav {
       margin-top: 0;
     }
+
+    footer {
+      font-size: 15px;
+    }
    }
-      
 
   
-  
-  /* media query for larger screens */
+    
   @media screen and (min-width: 968px) {
     
     .column {
       flex: 0 0 35%;
       max-width: 35%;
-    
     }
 
     .code-card {
       max-width: 100%;
       padding-bottom: -1px;
     }
-
    
   }
 
