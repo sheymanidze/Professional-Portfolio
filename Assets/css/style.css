@@ -114,7 +114,7 @@ span {
 
 #work {
   display: flex;
-  margin-left: 8vw;
+  margin-left: 7.7vw;
 }
 main {
   width: 96%;
@@ -127,7 +127,7 @@ main {
   flex-wrap: wrap;
   flex-direction: row;
   margin-left: -4.5rem;
-  margin-right: -2.5rem;
+  
   
 }
 
@@ -245,35 +245,40 @@ footer {
   h2 {
     justify-content:left;
     margin-top: 60px;
+    margin-bottom: -45px;
   }
   main {
     border-left: hidden;
     border-top: 5px solid #fdd51b;
-    margin-left: 100px;
+    margin-left: 27px;
     
   }
 
   #work {
-    margin-left: -67px;
-    margin-bottom: 40px;
-    margin-top: -44px;
+    margin-left: -8vw;
+    margin-bottom: 5.5vw;
   }
 
+  .row {
+    margin-left: 0.5rem;
+  }
   .column {
-    padding-top: 4rem;
-    margin-bottom: -3.5rem;
+    padding:2rem 0 0 0;
+  }
+  .code-card {
+    outline: 3px dashed #fdd51b;
   }
 
+  #contact-me {
+    margin-top: -10px;
+    
+  }
   .contacts nav {
     border-left: hidden;
     border-top: 5px solid #fdd51b;
     padding-top: 40px;
     margin-left: 40px;
     margin-top: 100px;
-  }
-
-  .code-card {
-    outline: 3px dashed #fdd51b;
   }
 
   .main nav a {
