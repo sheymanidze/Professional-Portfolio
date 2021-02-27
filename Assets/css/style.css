@@ -57,7 +57,7 @@ section {
   background-size: cover;
   background-position: center;
 }
-/*illustration of me*/
+
 .helper {
  max-width: 250px; 
  height: auto;
@@ -73,13 +73,12 @@ h2 {
   text-align:right; 
   margin-top: 30px;
 }
-/*h2 and p together*/
+
 .all {
   display: flex;
   flex-direction: row;
 }
 
-/*About Me section on the side*/
 .sides {
   width: 30vw;
   margin-top: 20px;
@@ -97,7 +96,7 @@ h2 {
 .main {
   width: 70vw;
 }
-/*About Me section p*/
+
 .middle {
   font-size: 20px;
   color: black;
@@ -120,8 +119,7 @@ span {
 main {
   width: 96%;
   margin: 3rem auto;
- margin-left: 5px;
- border-left: 5px solid #fdd51b;
+  border-left: 5px solid #fdd51b;
 }
 
 .row {
@@ -389,8 +387,6 @@ footer {
       font-size: 15px;
     }
   }
-
-  
     
   @media screen and (min-width: 968px) {
     
