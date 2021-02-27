@@ -136,6 +136,9 @@ main {
   justify-content: center;
 }
 
+.column1{
+  flex: 0 0 72.5%;
+}
 .column {
   width: 70vw;
   flex: 1 0 100%;
@@ -162,7 +165,6 @@ img:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  max-width: 70%;
   padding: 0.7rem;
   padding-bottom: 1rem;
   outline: 3px solid #fdd51b;
@@ -262,6 +264,10 @@ footer {
   .row {
     margin-left: 0.5rem;
   }
+ .column1 {
+ flex:1;
+ padding-top: 2rem;
+}
   .column {
     padding:2rem 0 0 0;
   }
