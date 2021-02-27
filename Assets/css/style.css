@@ -5,7 +5,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  min-width: fit-content;
+
 }
 
 header {
@@ -58,7 +58,7 @@ section {
   background-size: cover;
   background-position: center;
 }
-
+/*Picture on of me*/
 .helper {
  max-width: 250px; 
  height: auto;
@@ -78,6 +78,7 @@ h2 {
   margin-left: 12px;
 }
 
+/*p about me*/
 .middle {
   font-size: 20px;
   color: black;
@@ -87,11 +88,12 @@ h2 {
   margin-top: 50px;
   border-left:5px solid #fdd51b;
 }
+/*my name*/
 span {
   font-weight: 900;
   font-size: 23px; 
 }
-
+/*sides with middle part*/
 .all {
   display: flex;
   flex-direction: row;
@@ -108,14 +110,14 @@ span {
   margin-right: 10px;
 }
 
-
+/*middle and p*/
 .main {
   width: 70vw;
 }
 
 #work {
   display: flex;
-  margin-left: 7.7vw;
+  margin-left: 7.2vw;
 }
 
 main {
@@ -134,7 +136,7 @@ main {
 .one {
   justify-content: center;
 }
-
+/*first img*/
 .column1{
   flex: 0 0 72.5%;
 }
@@ -394,6 +396,10 @@ footer {
   }
     
   @media screen and (max-width: 282px) { 
+
+    body {
+      min-width: fit-content;
+    }
 
     .middle {
      margin-top: 18px;
