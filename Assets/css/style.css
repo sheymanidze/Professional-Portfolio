@@ -63,6 +63,7 @@ section {
  height: auto;
  position: absolute;
  top: 36px;
+ opacity: 100%;
 }
 
 h2 {
@@ -107,18 +108,92 @@ h2 {
   margin-top: 50px;
   border-left:5px solid #fdd51b;
 }
-
+/*
 .mid3 {
   border-left:5px solid #fdd51b;
   display: inline;
+*/
 
-}
 span {
   font-weight: 900;
   font-size: 23px; 
 }
 
- /*Work section main*/
+#work {
+  margin-left: 132px;
+}
+main {
+  width: 96%;
+  margin: 3rem auto;
+ margin-left: 5px;
+ border-left: 5px solid #fdd51b;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -4.5rem;
+  margin-right: -2.5rem;
+  
+}
+
+.one {
+  justify-content: center;
+}
+
+
+.column {
+  width: 70vw;
+  flex: 1 0 100%;
+  padding: 1rem;
+ transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
+.code-card {
+  flex-grow: 1;
+}
+
+img {
+  width:  100%;
+  height: 290px;
+  object-fit: cover;
+  opacity: 10%;
+  }
+    
+img:hover {
+  opacity: 100%;
+}
+
+.code-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 70%;
+  padding: 0.7rem;
+  padding-bottom: 1rem;
+  outline: 3px solid #fdd51b;
+  outline-offset: -2px;
+  transition: all 0.5s ease-in-out;
+}
+ .code-card .card-header {
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: grey;
+    color: #fdd51b;
+    border: 2px solid #fdd51b;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+.code-card:hover, .code-card:hover .card-header {
+  box-shadow: inset 0px 0px 10px #fdd51b, 0 0 15px #fdd51b;
+}
+.code-card .code-block {
+  flex-grow: 1;
+}
+
+ /*Work section main
 .accessibility-website {
   opacity: 30%;
   stroke-opacity: 100%;
@@ -131,7 +206,8 @@ span {
 .container {
    position: relative;
  }
-
+/*
+ /*
 .text-block {
   position: absolute;
   bottom: 100px;
@@ -181,7 +257,7 @@ span {
 .column img:hover {
   opacity: 100%;
 }
-
+*/
 .contacts {
   margin-top: 20px;
   margin-bottom: 50px;
@@ -216,9 +292,10 @@ footer {
 }
 
 }
-@media screen and (max-width: 958px) {
- 
 
+@media screen and (max-width: 968px) {
+ 
+/*
   .column , .all{
      flex-direction: column;
      justify-content: center;
@@ -229,7 +306,11 @@ footer {
     width: 300px;
     height: 150px;
   }
-
+*/
+.all{
+  flex-direction: column;
+  justify-content: center;
+}
   .middle {
     border-left:hidden;
     margin-top:85px;
@@ -244,14 +325,14 @@ footer {
   .mid2 {
       margin-bottom: 85px;
     }
-
+/*
   .mid3 {
     border-left: hidden;
     border-top: 5px solid #fdd51b;
     margin-left: 40px;
     margin-top: 100px;
   }
-
+*/
   h2 {
     justify-content:left;
     margin-top: 100px;
@@ -308,9 +389,15 @@ footer {
     .main nav a {
       margin-left: 0;
     }
+
+    .middle {
+      margin-top: 0;
+    }
+    /*
     .middle, .mid3 {
       margin-top: 0;
     }
+    */
 
     h2 {
       margin-top: 20px;
@@ -326,4 +413,22 @@ footer {
    }
       
 
+  
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 968px) {
+    
+    .column {
+      flex: 0 0 35%;
+      max-width: 35%;
+    
+    }
+
+    .code-card {
+      max-width: 100%;
+      padding-bottom: -1px;
+    }
+
+   
+  }
 
