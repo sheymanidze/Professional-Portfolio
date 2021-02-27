@@ -5,8 +5,9 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-
+  min-width: fit-content;
 }
+
 
 header {
   display: flex;
@@ -396,10 +397,6 @@ footer {
   }
     
   @media screen and (max-width: 282px) { 
-
-    body {
-      min-width: fit-content;
-    }
 
     .middle {
      margin-top: 18px;
