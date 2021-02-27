@@ -74,6 +74,23 @@ h2 {
   text-align:right; 
   margin-top: 30px;
 }
+#about-me {
+  margin-left: 12px;
+}
+
+.middle {
+  font-size: 20px;
+  color: black;
+  display: inline;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  border-left:5px solid #fdd51b;
+}
+span {
+  font-weight: 900;
+  font-size: 23px; 
+}
 
 .all {
   display: flex;
@@ -91,34 +108,18 @@ h2 {
   margin-right: 10px;
 }
 
-#about-me {
-  margin-left: 12px;
-}
+
 .main {
   width: 70vw;
-}
-
-.middle {
-  font-size: 20px;
-  color: black;
-  display: inline;
-  padding-left: 30px;
-  margin-bottom: 10px;
-  margin-top: 50px;
-  border-left:5px solid #fdd51b;
-}
-
-span {
-  font-weight: 900;
-  font-size: 23px; 
 }
 
 #work {
   display: flex;
   margin-left: 7.7vw;
 }
+
 main {
-  width: 96%;
+  width: 90%;
   margin: 3rem auto;
   border-left: 5px solid #fdd51b;
 }
@@ -128,8 +129,6 @@ main {
   flex-wrap: wrap;
   flex-direction: row;
   margin-left: -4.5rem;
-  
-  
 }
 
 .one {
@@ -139,15 +138,13 @@ main {
 .column1{
   flex: 0 0 72.5%;
 }
+
 .column {
   width: 70vw;
   flex: 1 0 100%;
   padding: 1rem;
  transition: flex-basis 500ms linear;
   margin-bottom: 1.5rem;
-}
-.code-card {
-  flex-grow: 1;
 }
 
 img {
@@ -163,6 +160,7 @@ img:hover {
 
 .code-card {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: flex-start;
   padding: 0.7rem;
@@ -171,6 +169,7 @@ img:hover {
   outline-offset: -2px;
   transition: all 0.5s ease-in-out;
 }
+
  .code-card .card-header {
     position: relative;
     margin: -4rem 0 1.5rem 0;
@@ -181,12 +180,13 @@ img:hover {
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
   }
-.code-card:hover, .code-card:hover .card-header {
+
+  .code-card:hover, .code-card:hover .card-header {
   box-shadow: inset 0px 0px 10px #fdd51b, 0 0 15px #fdd51b;
-}
-.code-card .code-block {
+  }
+  .code-card .code-block {
   flex-grow: 1;
-}
+  }
 
 .contacts {
   margin-top: 20px;
@@ -215,20 +215,20 @@ footer {
 
 @media screen and (max-width: 1341px) {
 
-.helper {
-  top: 40px;
-  max-width: 200px;
-  height: auto;
-}
-
+ .helper {
+   top: 40px;
+   max-width: 200px;
+   height: auto;
+ }
 }
 
 @media screen and (max-width: 968px) {
  
-.all{
-  flex-direction: column;
-  justify-content: center;
-}
+ .all{
+   flex-direction: column;
+   justify-content: center;
+ }
+
   .middle {
     border-left:hidden;
     margin-top:85px;
@@ -251,9 +251,7 @@ footer {
   }
   main {
     border-left: hidden;
-    border-top: 5px solid #fdd51b;
-    
-    
+    border-top: 5px solid #fdd51b; 
   }
 
   #work {
@@ -264,10 +262,12 @@ footer {
   .row {
     margin-left: 0.5rem;
   }
- .column1 {
- flex:1;
- padding-top: 2rem;
-}
+
+  .column1 {
+   flex:1;
+   padding-top: 2rem;
+  }
+
   .column {
     padding:2rem 0 0 0;
   }
@@ -276,9 +276,9 @@ footer {
   }
 
   #contact-me {
-    margin-top: -10px;
-    
+    margin-top: -10px; 
   }
+
   .contacts nav {
     border-left: hidden;
     border-top: 5px solid #fdd51b;
@@ -292,10 +292,11 @@ footer {
   }
   }
 
-  @media screen and (max-width: 850px) {  
-    .main nav {
-      font-size: 20px;
-    }
+  @media screen and (max-width: 850px) { 
+     
+  .main nav {
+    font-size: 20px;
+  }
        
   }
   @media screen and (max-width: 768px) {  
@@ -315,21 +316,19 @@ footer {
       text-decoration-thickness: 1px;
       font-weight: lighter;
     }
-     
-
+    
     .main nav a{
       font-size: 15px;
       margin-left: 0;
-  
     }
    } 
 
    @media screen and (max-width: 545px) { 
      
-    .sides h2{
-      margin-right: 36;
-    }
-    #work {
+     .sides h2{
+       margin-right: 36;
+     }
+     #work {
        margin-left: 8px;
      }
      #contact-me {
@@ -343,36 +342,28 @@ footer {
        margin-top: -22px;
        margin-bottom: -52px;
      }
+
      #work  {
        margin-left: 15px;
      }
+
      #contact-me {
       margin-left: 52px;
     }
-
-    
    }
 
    @media screen and (max-width: 375px) { 
      
+    h2 {
+      margin-top: -31px; 
+    }
+    
     .sides h2 {
       font-size: 20px;
-    }
-    #contact-me h2 {
-      font-size: 15px;
-      margin-left: -10px;
-    }
-    .main nav a {
-      margin-left: 0;
     }
 
     .middle {
       margin-top: 0;
-    }
-
-    h2 {
-      margin-top: -31px;
-      
     }
 
     .mid2 {
@@ -383,10 +374,17 @@ footer {
       margin-left: -19px;
       margin-top: 15px;
     }
-
-
+    #contact-me h2 {
+      font-size: 15px;
+      margin-left: -10px;
+    }
+    
     .main nav {
       margin-top: 0;
+    }
+
+    .main nav a {
+      margin-left: 0;
     }
 
     footer {
@@ -395,6 +393,7 @@ footer {
   }
     
   @media screen and (max-width: 282px) { 
+
     .middle {
      margin-top: 18px;
      font-size: 15px;
@@ -407,6 +406,7 @@ footer {
     #work {
       margin-left: 5px;
     }
+
     main {
       margin-top: -15px;
     
@@ -416,6 +416,7 @@ footer {
       padding-top: 1rem;
     }
   }
+
   @media screen and (min-width: 968px) {
     
     .column {
@@ -427,6 +428,5 @@ footer {
       max-width: 100%;
       padding-bottom: -1px;
     }
-   
   }
 
