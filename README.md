@@ -34,19 +34,14 @@ This Website was built in order to show to potentional employer ability to build
 
 ## Screenshot
 
-* Full Page
-![Finished-product](./Assets/Images/screenshot1.png)
+* Desktop 
+ ![Main Page](./Assets/Images/full-page.png)
 
-* Smaller size pages
-![Finished-product](./Assets/Images/screencapture2.png) 
-
-
-![Finished-product](./Assets/Images/screencapture3.png)
+* Mobile
+ ![Main Page](./Assets/Images/mobile.png) 
 
 
-![Finished-product](./Assets/Images/screencapture4.png)
-
-
+ ![Main Page](./Assets/Images/mobile2.png)
 
 
 ## Deployment of application
@@ -56,5 +51,4 @@ To run a project, please follow the link [https://sheymanidze.github.io/Professi
 ## Next steps
 
 * Websites will be constantly updated with new and most valuable work experienece; 
-* JS will be incorporated after learning more about the languages;
 * Possible layout adjustment.
